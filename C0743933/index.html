@@ -2,11 +2,27 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>C0743933</title>
+    <title>C0742279</title>
     <link href="css/default.css" rel="stylesheet" />
+    <script>
+        var calculater = {
+            sum: 0,
+            Startpoint: 1109,
+            endpoint: 119,
+            stepdownNUm: 11,
+            addup: function () {
+                for (counter = this.Startpoint; counter >= this.endpoint; counter -= this.stepdownNUm) {
+                    this.sum += counter;
+                }
+                return this.sum;
+            }
+        };
+        document.write(calculater.addup());
+    </script>
 </head>
 <body>
-    <div>Content goes here!!</div>
+
+    <div>content goes here!</div>
     <script src="js/main.js"></script>
 </body>
 </html>
